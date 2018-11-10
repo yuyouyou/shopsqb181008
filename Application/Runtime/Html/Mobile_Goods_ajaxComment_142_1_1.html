@@ -1,0 +1,162 @@
+ <!---晒单end-->
+ <script>
+ 	$(document).ready(function() {
+ 		$('.comment_littlenav ul li').click(function() {
+ 			$(this).addClass('com-red').siblings().removeClass('com-red');
+ 		});
+ 	});
+ </script>
+<div class="comment_list" id="commentList"  data-id="0" >
+	<ul>
+  	<li class="comment_item">
+        <div class="content_head" style="border-bottom:1px solid #dedede;">
+	          <div class="info">
+	            <div class=" comment_star">
+	              <div class="bor_sli">
+		              <div class="one"><em><img src=" /Template/mobile/new/Static/images/user68.jpg"></em></div>
+		              <div class="name">
+		              				              </div>
+		              <div class="two">1970-01-01 08:33:36</div>
+	              </div>
+	              <div class="satr_img"><em><img src="/Template/mobile/new/Static/images/stars0.png" alt="" /></em></div>
+	              <p> 买来送给我老公的, 嘻嘻....</p>
+											            </div>
+	          </div>
+	          
+			 <!---晒单-->
+			<div class="sd_img">
+					<dl id="gallery">
+						<dd>
+						    	<a href="/Public/upload/goods/2016/04-21/57187dbb16571.jpg"><img src="/Public/upload/goods/2016/04-21/57187dbb16571.jpg" width="100px" heigth="100px"></a>
+						    </dd><dd>
+						    	<a href="/Public/upload/goods/2016/04-21/57187dd92a26f.jpg"><img src="/Public/upload/goods/2016/04-21/57187dd92a26f.jpg" width="100px" heigth="100px"></a>
+						    </dd><dd>
+						    	<a href="/Public/upload/goods/2016/04-21/57187dd8e18e8.jpg"><img src="/Public/upload/goods/2016/04-21/57187dd8e18e8.jpg" width="100px" heigth="100px"></a>
+						    </dd>					</dl>
+					</div>			<!--管理员回复-->
+			   		</div>
+   		<div class="assess-btns">        
+   			<a class="assess-like-btn" data-comment-id="313" onclick="zan(this);">
+   				<i class="assess-btns-icon btn-like-icon like-grey"></i>            
+   				<span class="assess-btns-num" id="span_zan_313">0</span>
+   			</a>        
+   			<a class="assess-reply-btn" >
+   				<i class="assess-btns-icon btn-reply-icon"></i>            
+   				<span class="assess-btns-num">0</span>
+   			</a>
+   		</div>
+   	  </li><li class="comment_item">
+        <div class="content_head" style="border-bottom:1px solid #dedede;">
+	          <div class="info">
+	            <div class=" comment_star">
+	              <div class="bor_sli">
+		              <div class="one"><em><img src=" /Template/mobile/new/Static/images/user68.jpg"></em></div>
+		              <div class="name">
+		              				              </div>
+		              <div class="two">1970-01-01 08:33:36</div>
+	              </div>
+	              <div class="satr_img"><em><img src="/Template/mobile/new/Static/images/stars0.png" alt="" /></em></div>
+	              <p> 第二次光顾了, 不错 ,不错 ....</p>
+											            </div>
+	          </div>
+	          
+			 <!---晒单-->
+						<!--管理员回复-->
+			   		</div>
+   		<div class="assess-btns">        
+   			<a class="assess-like-btn" data-comment-id="317" onclick="zan(this);">
+   				<i class="assess-btns-icon btn-like-icon like-grey"></i>            
+   				<span class="assess-btns-num" id="span_zan_317">0</span>
+   			</a>        
+   			<a class="assess-reply-btn" >
+   				<i class="assess-btns-icon btn-reply-icon"></i>            
+   				<span class="assess-btns-num">0</span>
+   			</a>
+   		</div>
+   	  </li><li class="comment_item">
+        <div class="content_head" style="border-bottom:1px solid #dedede;">
+	          <div class="info">
+	            <div class=" comment_star">
+	              <div class="bor_sli">
+		              <div class="one"><em><img src=" /Template/mobile/new/Static/images/user68.jpg"></em></div>
+		              <div class="name">
+		              				              </div>
+		              <div class="two">1970-01-01 08:33:36</div>
+	              </div>
+	              <div class="satr_img"><em><img src="/Template/mobile/new/Static/images/stars1.png" alt="" /></em></div>
+	              <p> 买回来用了一段时间, 真心感觉不错  ....</p>
+											            </div>
+	          </div>
+	          
+			 <!---晒单-->
+						<!--管理员回复-->
+			   		</div>
+   		<div class="assess-btns">        
+   			<a class="assess-like-btn" data-comment-id="321" onclick="zan(this);">
+   				<i class="assess-btns-icon btn-like-icon like-grey"></i>            
+   				<span class="assess-btns-num" id="span_zan_321">0</span>
+   			</a>        
+   			<a class="assess-reply-btn" >
+   				<i class="assess-btns-icon btn-reply-icon"></i>            
+   				<span class="assess-btns-num">0</span>
+   			</a>
+   		</div>
+   	  </li>	</ul>
+</div>
+<script>
+	var  page = 1;
+	function ajax_sourch_submit() {
+		page += 1;
+		$.ajax({
+			type: "GET",
+			url: "/index.php/Mobile/Goods/ajaxComment/goods_id/142/commentType/1"+"/p/" + page,//+tab,
+			success: function (data) {
+				if ($.trim(data) == '')
+					$('.getmore').hide();
+				else
+					$("#commentList").append(data);
+			}
+		});
+	}
+
+
+	$(document).ready(function() {
+		 $('.assess-like-btn').click(function() {
+		 	$(this).find('.assess-btns-icon').toggleClass('bac-po');
+		 });
+	})
+	/**
+	 * 点赞ajax
+	 * dyr
+	 * @param obj
+	 */
+	function zan(obj) {
+		var comment_id = $(obj).attr('data-comment-id');
+		var zan_num = parseInt($("#span_zan_" + comment_id).text());
+		$.ajax({
+			type: "POST",
+			data: {comment_id: comment_id},
+			dataType: 'json',
+			url: "/index.php?m=Home&c=user&a=ajaxZan",//
+			success: function (res) {
+				if (res.success) {
+					$("#span_zan_" + comment_id).text(zan_num + 1);
+				} else {
+					alert('只能点赞一次哟~');
+				}
+			},
+			error : function(res) {
+				if( res.status == "200"){ // 兼容调试时301/302重定向导致触发error的问题
+					alert("请先登录!");
+					return;
+				}
+				alert("请求失败!");
+				return;
+			}
+		});
+	}
+	function  ajax_sourch_submit_hide(){
+		$('.getmore').hide();
+	}
+
+</script>
