@@ -125,7 +125,7 @@
 						<script>
                             // 倒计时
                             function GetRTime2(){
-								var text = GetRTime('{$group_buy_info.end_time|date="Y/m/d H:i:s",###}');								
+								var text = GetRTime('{$group_buy_info.end_time|date="Y/m/d H:i:s",###}');
                                 $("#leftTime").text(text);
                             }
                             setInterval(GetRTime2,1000);
@@ -175,7 +175,7 @@
 													<foreach name="spec" item="v2" key="k2">
 														<a href="javascript:;" onclick="switch_spec(this);" title="{$v2[item]}" <if condition="$k2 eq 0">class="hover"</if>>
 											          	<input type="radio" style="display:none;" name="goods_spec[{$key}]" value="{$v2[item_id]}" <if condition="$k2 eq 0 ">checked="checked"</if>/>
-										          		{$v2[item]}            
+										          		{$v2[item]}
 										          	  </a>
 													</foreach>
 												</div>
@@ -198,7 +198,7 @@
 						                    <input type="text" class="num" id="number" name="goods_num" value="1" min="1" max="1000"/>
 						                    <input type="hidden" name="goods_id" value="{$goods.goods_id}"/>
 						                  <button type="button" class="increase" onClick="goods_add();">+</button>
-						                  </span> 
+						                  </span>
 						                </div>
 									</li>
 								</ul>
@@ -317,9 +317,9 @@
               <li><span>物流服务</span><strong>:5.0</strong><em>高</em></li>
             </ul>
           </div>
-          <div class="s_dianpu"> <span><a href="tel:03350785268" style=" margin-left:7%;"><em class="bg1"></em>联系客服</a></span> <span><a href="supplier.php?suppId=1" style=" margin-left:3%;"><em class="bg2"></em>进入店铺</a></span> </div>
+          <div class="s_dianpu"> <span><a href="tel:03350785268" style=" margin-left:7%;"><em class="bg1"></em>联系卖家</a></span> <span><a href="supplier.php?suppId=1" style=" margin-left:3%;"><em class="bg2"></em>进入店铺</a></span> </div>
         </section>
-      </div> 
+      </div>
       -->
 				</form>
 			</div>
@@ -381,16 +381,16 @@
 
 			function get_goods_price() {
 				var goods_price = {$goods.shop_price}; // 商品起始价
-				var store_count = {$goods.store_count}; // 商品起始库存	
-				var spec_goods_price = {$spec_goods_price}; // 规格 对应 价格 库存表   //alert(spec_goods_price['28_100']['price']);	
+				var store_count = {$goods.store_count}; // 商品起始库存
+				var spec_goods_price = {$spec_goods_price}; // 规格 对应 价格 库存表   //alert(spec_goods_price['28_100']['price']);
 				// 如果有属性选择项
 				if (spec_goods_price != null) {
 					goods_spec_arr = new Array();
 					$("input[name^='goods_spec']:checked").each(function() {
 						goods_spec_arr.push($(this).val());
 					});
-					var spec_key = goods_spec_arr.sort(sortNumber).join('_'); //排序后组合成 key	
-					goods_price = spec_goods_price[spec_key]['price']; // 找到对应规格的价格		
+					var spec_key = goods_spec_arr.sort(sortNumber).join('_'); //排序后组合成 key
+					goods_price = spec_goods_price[spec_key]['price']; // 找到对应规格的价格
 					store_count = spec_goods_price[spec_key]['store_count']; // 找到对应规格的库存
 				}
 				var goods_num = parseInt($("#goods_num").val());
