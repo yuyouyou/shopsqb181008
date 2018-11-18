@@ -44,6 +44,7 @@ class StoreController extends BaseController{
 			$this->assign('city',$city);
 			$this->assign('area',$area);
 		}
+		var_dump($store);
 		$this->assign('store',$store);
 		$this->display();
 	}

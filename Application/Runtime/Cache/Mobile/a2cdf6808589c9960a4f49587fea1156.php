@@ -23,7 +23,7 @@
 <script type="text/javascript" src="/Template/mobile/new/Static/js/layer.js" ></script>
 </head>
 
-<body>      
+<body>
 <div id="tbh5v0">
 <div class="user_com">
 
@@ -69,12 +69,12 @@
 </div>
 <div class="Wallet">
 	<a href="<?php echo U('User/address_list');?>"><em class="Icon Icon5"></em><dl class="b"><dt>地址管理</dt><dd>&nbsp;</dd></dl></a>
-	<a href="<?php echo U('User/points');?>"><em class="Icon Icon6"></em><dl class="b"><dt>我的积分</dt><dd>&nbsp;</dd></dl></a>
-	<a href="<?php echo U('User/message_list');?>"><em class="Icon Icon7"></em><dl class="b"><dt>我的留言</dt><dd>&nbsp;</dd></dl></a>
+<!--	<a href="<?php echo U('User/points');?>"><em class="Icon Icon6"></em><dl class="b"><dt>我的积分</dt><dd>&nbsp;</dd></dl></a>
+-->	<a href="<?php echo U('User/message_list');?>"><em class="Icon Icon7"></em><dl class="b"><dt>我的留言</dt><dd>&nbsp;</dd></dl></a>
 	<a href="<?php echo U('User/return_goods_list');?>"><em class="Icon Icon11"></em><dl><dt>售后服务</dt><dd>&nbsp;</dd></dl></a>
-    
 
-	<a href="/index.php/Newjoin/agreement.html"><em class="Icon Icon1"></em><dl><dt>申请入驻</dt><dd>&nbsp;</dd></dl></a>  
+
+	<a href="/index.php/Newjoin/agreement.html"><em class="Icon Icon1"></em><dl><dt>申请入驻</dt><dd>&nbsp;</dd></dl></a>
 
 </div>
 <div class="Wallet">
@@ -128,23 +128,23 @@
 			</li>
 		</ul>
 	</div>
-</div> 
-<script type="text/javascript">
+</div>
+<!--<script type="text/javascript">
 $(document).ready(function(){
 	  var cart_cn = getCookie('cn');
 	  if(cart_cn == ''){
 		$.ajax({
 			type : "GET",
 			url:"/index.php?m=Home&c=Cart&a=header_cart_list",//+tab,
-			success: function(data){								 
+			success: function(data){
 				cart_cn = getCookie('cn');
-				$('#cart_quantity').html(cart_cn);						
+				$('#cart_quantity').html(cart_cn);
 			}
-		});	
+		});
 	  }
 	  $('#cart_quantity').html(cart_cn);
 });
-</script>
+</script>-->
 <!-- 微信浏览器 调用微信 分享js-->
 <?php if($signPackage != null): ?><script type="text/javascript" src="/Template/mobile/new/Static/js/jquery.js"></script>
 <script src="/Public/js/global.js"></script>

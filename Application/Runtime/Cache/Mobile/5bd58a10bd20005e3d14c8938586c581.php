@@ -22,7 +22,7 @@
 <body>
 <script type="text/javascript">
 var process_request = "正在处理您的请求...";
-</script> 
+</script>
 <div class="main">
   <div class="tab_nav">
     <div class="header">
@@ -37,7 +37,7 @@ var process_request = "正在处理您的请求...";
       <div class="h-right">
         <aside class="top_bar">
           <div onClick="show_menu();$('#close_btn').addClass('hid');" id="show_more"><a href="javascript:;"></a> </div>
-          <a href="<?php echo U('Mobile/Cart/cart');?>" class="show_cart"><em class="global-nav__nav-shop-cart-num" id="tp_cart_info"><?php echo ($cart_total_price[anum]); ?></em></a> 
+          <a href="<?php echo U('Mobile/Cart/cart');?>" class="show_cart"><em class="global-nav__nav-shop-cart-num" id="tp_cart_info"><?php echo ($cart_total_price[anum]); ?></em></a>
          </aside>
       </div>
     </div>
@@ -53,7 +53,7 @@ var process_request = "正在处理您的请求...";
         <li><a href="<?php echo U('Cart/cart');?>"><span class="menu3"></span><i>购物车</i></a></li>
         <li style=" border:0;"><a href="<?php echo U('User/index');?>"><span class="menu4"></span><i>我的</i></a></li>
    </ul>
- </div>  
+ </div> 
   <div class="main" id="user_goods_ka_1" style="display:block;">
 <div class="banner">
   <div id="slider" class="slider" style="overflow: hidden; visibility: visible; list-style: none; position: relative;">
@@ -72,7 +72,7 @@ var process_request = "正在处理您的请求...";
 });
 var active=0,
 	as=document.getElementById('pagenavi').getElementsByTagName('a');
-	
+
 for(var i=0;i<as.length;i++){
 	(function(){
 		var j=i;
@@ -94,27 +94,27 @@ var t2=new TouchSlider({id:'sliderlist', speed:600, timeout:6000, before:functio
           <h3 class="name"><?php echo ($goods["goods_name"]); ?></h3>
           <div class="right">
 
-<!-- JiaThis Button BEGIN -->          
+<!-- JiaThis Button BEGIN -->
           <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt" target="_blank">
             <div id="pro_share" class="share"></div>
-          </a>         
+          </a>
 <script>
  var jiathis_config = {
 						url:"http://<?php echo ($_SERVER[HTTP_HOST]); ?>/index.php?m=Mobile&c=Goods&a=goodsInfo&id=<?php echo ($_GET[id]); ?>",
-						pic:"http://<?php echo ($_SERVER[HTTP_HOST]); echo (goods_thum_images($goods[goods_id],400,400)); ?>", 
+						pic:"http://<?php echo ($_SERVER[HTTP_HOST]); echo (goods_thum_images($goods[goods_id],400,400)); ?>",
 					}
 var is_distribut = getCookie('is_distribut');
 var user_id = getCookie('user_id');
 // 如果已经登录了, 并且是分销商
 if(parseInt(is_distribut) == 1 && parseInt(user_id) > 0)
-{									
-	jiathis_config.url = jiathis_config.url + "&first_leader="+user_id;									
-}										
+{
+	jiathis_config.url = jiathis_config.url + "&first_leader="+user_id;
+}
 //alert(jiathis_config.url);
-</script>           
+</script>
 <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
-<!-- JiaThis Button END -->          
-          
+<!-- JiaThis Button END -->
+
           </div>
         </div>
         <dl class="goods_price">
@@ -136,36 +136,36 @@ if(parseInt(is_distribut) == 1 && parseInt(user_id) > 0)
 	      <div class="navContent">
           <?php if($prom_goods != null): ?><ul class="youhui_list1">
                 <li>
-                <a href="javascript:void(0);" title="<?php echo ($prom_goods[name]); ?>"><img src="/Template/mobile/new/Static/images/hui.png"></a> 
+                <a href="javascript:void(0);" title="<?php echo ($prom_goods[name]); ?>"><img src="/Template/mobile/new/Static/images/hui.png"></a>
                 <a href="javascript:void(0);" ><?php echo ($prom_goods[name]); ?>&nbsp;&nbsp;(活动时间：<?php echo (date("m月d日",$prom_goods[start_time])); ?> - <?php echo (date("m月d日",$prom_goods[end_time])); ?>)</a>
                 </li>
               </ul><?php endif; ?>
 		<?php
  $md5_key = md5("select * from `__PREFIX__prom_order` order by  id desc limit 5"); $result_name = $sql_result_v = S("sql_".$md5_key); if(empty($sql_result_v)) { $Model = new \Think\Model(); $result_name = $sql_result_v = $Model->query("select * from `__PREFIX__prom_order` order by  id desc limit 5"); S("sql_".$md5_key,$sql_result_v,1); } foreach($sql_result_v as $k=>$v): ?><ul class="youhui_list1" style="margin-top:0px;">
 	      	<li><img src="/Template/mobile/new/Static/images/hui.png"><?php echo ($v['name']); ?>&nbsp;&nbsp;(活动时间：<?php echo (date("m月d日",$v[start_time])); ?> - <?php echo (date("m月d日",$v[end_time])); ?>)</li>
-	      </ul><?php endforeach; ?>          
+	      </ul><?php endforeach; ?>
 	      <div class="blank10"></div>
 	      </div>
-      </section><?php endif; ?>      
+      </section><?php endif; ?>
 <!-------商品属性-------->
 <?php if($filter_spec != ''): ?><section id="search_ka">
 <!---属性---->
-<div class="ui-sx bian1"> 
-<div class="subNavBox"> 
+<div class="ui-sx bian1">
+<div class="subNavBox">
 	<div class="subNav"><strong>选择商品属性</strong></div>
-    <ul class="navContent"> 
-    <?php if(is_array($filter_spec)): foreach($filter_spec as $key=>$spec): ?><li>   
+    <ul class="navContent">
+    <?php if(is_array($filter_spec)): foreach($filter_spec as $key=>$spec): ?><li>
           <div class="title"><?php echo ($key); ?></div>
           <div class="item">
           <?php if(is_array($spec)): foreach($spec as $k2=>$v2): ?><a href="javascript:;" onclick="switch_spec(this);" title="<?php echo ($v2[item]); ?>" <?php if($k2 == 0): ?>class="hover"<?php endif; ?>>
 	          	<input type="radio" style="display:none;" name="goods_spec[<?php echo ($key); ?>]" value="<?php echo ($v2[item_id]); ?>" <?php if($k2 == 0 ): ?>checked="checked"<?php endif; ?>/>
-          		<?php echo ($v2[item]); ?>            
+          		<?php echo ($v2[item]); ?>
           	  </a><?php endforeach; endif; ?>
-          </div>                    
+          </div>
     </li><?php endforeach; endif; ?>
-       </ul>  
+       </ul>
     </div>
-    </div>    
+    </div>
 </section><?php endif; ?>
       <section id="search_ka">
         <div class="ui-sx bian1">
@@ -173,7 +173,7 @@ if(parseInt(is_distribut) == 1 && parseInt(user_id) > 0)
             <div class="subNav on"><strong>购买数量</strong></div>
             <ul class="navContent" style="display: block;">
               <li style=" border-bottom:1px solid #eeeeee">
-                <div class="item1"> 
+                <div class="item1">
                   <span class="ui-number">
                   <button type="button" class="decrease" onClick="goods_cut();">-</button>
                     <input type="text" class="num" id="number" name="goods_num" value="1" min="1" max="1000"/>
@@ -201,7 +201,7 @@ if(parseInt(is_distribut) == 1 && parseInt(user_id) > 0)
       </section>
 <script type="text/javascript">
 $(function(){
-	$(".subNav").click(function(){		
+	$(".subNav").click(function(){
 		$(this).next(".navContent").slideToggle(300).siblings(".navContent").slideUp(500);
 		$(this).toggleClass("on").siblings(".subNav").removeClass("on");
 		if($(".is_scroll").length <= 0)
@@ -212,7 +212,7 @@ $(function(){
 	commentType = 1; // 评论类型
     ajaxComment(1,1);// ajax 加载评价列表
 })
-</script> 
+</script>
 <script type="text/jscript">
 function click_search (){
   var search_ka = document.getElementById("search_ka");
@@ -222,7 +222,7 @@ function click_search (){
 		search_ka.className = "s-buy open ui-section-box";
 	}
 }
- 
+
 function changeAtt(t) {
 	t.lastChild.checked='checked';
 	for (var i = 0; i<t.parentNode.childNodes.length;i++) {
@@ -251,18 +251,18 @@ function changeAtt1(t) {
 }
 
 	function goods_cut(){
-  		var num_val=document.getElementById('number');  
-  		var new_num=num_val.value;  
-  		var Num = parseInt(new_num);  
-  		if(Num>1)Num=Num-1;  
+  		var num_val=document.getElementById('number');
+  		var new_num=num_val.value;
+  		var Num = parseInt(new_num);
+  		if(Num>1)Num=Num-1;
   		num_val.value=Num;
-  	}  
+  	}
   	function goods_add(){
-  		var num_val=document.getElementById('number'); 
-  		var new_num=num_val.value;  
-  		var Num = parseInt(new_num);  
+  		var num_val=document.getElementById('number');
+  		var new_num=num_val.value;
+  		var Num = parseInt(new_num);
   		Num=Num+1;  num_val.value=Num;
-  	} 
+  	}
 </script>
       <div style=" height:8px; background:#eeeeee; margin-top:-1px;"></div>
       <!--
@@ -293,7 +293,7 @@ function changeAtt1(t) {
               <li><span>物流服务</span><strong>:<?php echo ($store["store_deliverycredit"]); ?></strong><em>高</em></li>
             </ul>
           </div>
-          <div class="s_dianpu"> <span><a href="tel:<?php echo ($store["store_phone"]); ?>" style=" margin-left:7%;"><em class="bg1"></em>联系客服</a></span> 
+          <div class="s_dianpu"> <span><a href="tel:<?php echo ($store["store_phone"]); ?>" style=" margin-left:7%;"><em class="bg1"></em>联系卖家</a></span>
           <span><a href="<?php echo U('Store/index',array('store_id'=>$store[store_id]));?>" style=" margin-left:3%;"><em class="bg2"></em>进入店铺</a></span> </div>
         </section>
       </div><?php endif; ?>
@@ -312,11 +312,11 @@ function changeAtt1(t) {
         </ul>
     </section>
   </div>
-  <div class="tab_attrs tab_item hide" id="user_goods_ka_3" style="display:none;"> 
+  <div class="tab_attrs tab_item hide" id="user_goods_ka_3" style="display:none;">
 
 <div id="ECS_COMMENT">
 <link href="/Template/mobile/new/Static/css/photoswipe.css" rel="stylesheet" type="text/css">
-<script src="/Template/mobile/new/Static/js/klass.min.js"></script> 
+<script src="/Template/mobile/new/Static/js/klass.min.js"></script>
 <script src="/Template/mobile/new/Static/js/photoswipe.js"></script>
     <div class="comment_littlenav">
         <ul id="fy-comment-list">
@@ -336,7 +336,7 @@ function changeAtt1(t) {
 function goTop(){
 	$('html,body').animate({'scrollTop':0},600);
 }
-</script> 
+</script>
 <a href="javascript:goTop();" class="gotop"><img src="/Template/mobile/new/Static/images/topup.png"></a>
 <div style=" height:60px;"></div>
 <div class="footer_nav">
@@ -351,7 +351,7 @@ function goTop(){
   </dl>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){	
+$(document).ready(function(){
 	// 更新商品价格
 	get_goods_price();
 });
@@ -362,7 +362,7 @@ function switch_spec(spec)
     $(spec).siblings().removeClass('hover');
     $(spec).addClass('hover');
 	$(spec).siblings().children('input').prop('checked',false);
-	$(spec).children('input').prop('checked',true);	
+	$(spec).children('input').prop('checked',true);
     //更新商品价格
     get_goods_price();
 }
@@ -370,20 +370,20 @@ function switch_spec(spec)
 function get_goods_price()
 {
 	var goods_price = <?php echo ($goods["shop_price"]); ?>; // 商品起始价
-	var store_count = <?php echo ($goods["store_count"]); ?>; // 商品起始库存	
-	var spec_goods_price = <?php echo ($spec_goods_price); ?>;  // 规格 对应 价格 库存表   //alert(spec_goods_price['28_100']['price']);	
+	var store_count = <?php echo ($goods["store_count"]); ?>; // 商品起始库存
+	var spec_goods_price = <?php echo ($spec_goods_price); ?>;  // 规格 对应 价格 库存表   //alert(spec_goods_price['28_100']['price']);
 	// 如果有属性选择项
 	if(spec_goods_price != null)
 	{
 		goods_spec_arr = new Array();
 		$("input[name^='goods_spec']:checked").each(function(){
 			 goods_spec_arr.push($(this).val());
-		});    
-		var spec_key = goods_spec_arr.sort(sortNumber).join('_');  //排序后组合成 key	
-		goods_price = spec_goods_price[spec_key]['price']; // 找到对应规格的价格		
+		});
+		var spec_key = goods_spec_arr.sort(sortNumber).join('_');  //排序后组合成 key
+		goods_price = spec_goods_price[spec_key]['price']; // 找到对应规格的价格
 		store_count = spec_goods_price[spec_key]['store_count']; // 找到对应规格的库存
 	}
-	var goods_num = parseInt($("#goods_num").val()); 
+	var goods_num = parseInt($("#goods_num").val());
 	// 库存不足的情况
 	if(goods_num > store_count)
 	{
@@ -397,9 +397,9 @@ function get_goods_price()
 
 }
 
-function sortNumber(a,b) 
-{ 
-	return a - b; 
+function sortNumber(a,b)
+{
+	return a - b;
 }
 
 // 好评差评 切换
@@ -418,10 +418,10 @@ function ajaxComment(commentType,page){
         url:"/index.php?m=Mobile&c=goods&a=ajaxComment&goods_id=<?php echo ($goods['goods_id']); ?>&commentType="+commentType+"&p="+page,//+tab,
         success: function(data){
             $(".my_comment_list").empty().append(data);
-            var myPhotoSwipe = $("#gallery a").photoSwipe({ 
-        		enableMouseWheel: false, 
-        		enableKeyboard: false, 
-        		allowUserZoom: false, 
+            var myPhotoSwipe = $("#gallery a").photoSwipe({
+        		enableMouseWheel: false,
+        		enableKeyboard: false,
+        		allowUserZoom: false,
         		loop:false
         	});
         }
@@ -434,10 +434,10 @@ $(document).ready(function(){
 		$.ajax({
 			type : "GET",
 			url:"/index.php?m=Home&c=Cart&a=header_cart_list",//+tab,
-			success: function(data){								 
-				cart_cn = getCookie('cn');						
+			success: function(data){
+				cart_cn = getCookie('cn');
 			}
-		});	
+		});
 	  }
 	  $('#tp_cart_info').html(cart_cn);
 });
