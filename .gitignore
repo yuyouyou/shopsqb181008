@@ -1,4 +1,6 @@
 /app/public/views/widget
 /node_modules
 node_modules/**
+/Public/upload/**
+/Application/Runtime/**
 .idea/**
