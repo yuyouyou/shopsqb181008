@@ -60,7 +60,7 @@
 }
 .flowHot ul li a:hover {
 	text-decoration: underline;
-	color: #ff3300;
+	color: #3399cc;
 }
 .flowHot ul li p {
 	padding-bottom: 15px
@@ -185,7 +185,7 @@ cursor: pointer;
 	text-decoration: underline;
 }
 .thumb_name dl dd a.f6{
-	font-size:14px;	
+	font-size:14px;
 }
 .cart_jmprice {
 	font-size: 14px;
@@ -336,8 +336,8 @@ a.jm_buy {
 	display: block;
 }
 .timebox ul li label{
-	padding:10px 15px 10px 0px;	
-	*padding:0px 15px 0px 0px;	
+	padding:10px 15px 10px 0px;
+	*padding:0px 15px 0px 0px;
 }
 .seltimebox {
 	position: absolute;
@@ -406,7 +406,7 @@ a.jm_buy {
 }
 .payment_subbox ul li input{
 	margin-right:8px;
-	cursor:pointer;	
+	cursor:pointer;
 }
 .checkgoods {
 	border: 1px solid #ccc;
@@ -459,7 +459,7 @@ a.a_other1 {
 	text-decoration: none;
 }
 a.a_other1_h {
-	color: #ff3300;
+	color: #3399cc;
 	text-decoration: none;
 }
 .span_other2 {
@@ -524,7 +524,7 @@ a.a_other1_h {
 }
 .address_jm ul li .edit_addr a {
 	text-decoration: none;
-	color: #ff3300;
+	color: #3399cc;
 }
 .address_jm ul li.curr .edit_addr {
 	display: block;
@@ -550,7 +550,7 @@ a.a_other1_h {
 	padding: 5px 20px 5px 10px;
 }
 .address_jm ul li table tr td a {
-	color: #ff3300;
+	color: #3399cc;
 	text-decoration: none;
 }
 .input_addr1 {
@@ -751,7 +751,7 @@ _top:       expression(eval(document.compatMode && document.compatMode=='CSS1Com
 	background:#ffffff;
 	border-left:1px solid #eee;
 	border-right:1px solid #eee;
-	color: #ff3300;
+	color: #3399cc;
 	font-weight:bold;}
 .sub_bonus {
 	background: #ffffff;
@@ -883,7 +883,7 @@ _top:       expression(eval(document.compatMode &&  document.compatMode=='CSS1Co
 	height: 60px;
 	line-height: 70px;
 	text-align: left;
-	color: #ff3300;
+	color: #3399cc;
 }
 .mydiv-r {
 	position: absolute;
@@ -946,7 +946,7 @@ _top:       expression(eval(document.compatMode &&  document.compatMode=='CSS1Co
     float: left;
     text-align: center;
     width: 45%;
-   
+
 }
 .thumb_name dl dd {
     float: left;
@@ -957,7 +957,7 @@ _top:       expression(eval(document.compatMode &&  document.compatMode=='CSS1Co
     margin-left: 5px;
 }
 .checkBox_jm .title {
-    font-family: "Microsoft YaHei",微软雅黑;   
+    font-family: "Microsoft YaHei",微软雅黑;
     border: medium none;
 
 	margin: 0px;

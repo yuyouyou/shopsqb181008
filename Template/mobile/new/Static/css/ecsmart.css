@@ -677,7 +677,7 @@ html.mm-opening .mm-page, html.mm-opening #mm-blocker, html.mm-opening .mm-fixed
 	overflow: hidden;
 	font-family: "宋体"
 }
-/*底部模块*/ 
+/*底部模块*/
 .footer1 {
 	padding: 0 10px 10px;
 	color: #aaa;
@@ -693,6 +693,7 @@ html.mm-opening .mm-page, html.mm-opening #mm-blocker, html.mm-opening .mm-fixed
 .homeBtn, .footer1 .gotop {
 	position: absolute;
 	top: 0;
+	overflow:hidden;
 	width: 44px;
 	height: 44px;
 	color: #fff;
@@ -736,6 +737,7 @@ html.mm-opening .mm-page, html.mm-opening #mm-blocker, html.mm-opening .mm-fixed
 	background-repeat: no-repeat;
 	background-image: url('../img/top.png');
 	background-size: 27px;
+	overflow:hidden;
 }
 .footSearch {
 	position: relative;
@@ -841,7 +843,7 @@ html.mm-opening .mm-page, html.mm-opening #mm-blocker, html.mm-opening .mm-fixed
 	max-height: 35px;
 	margin-top: 14px;
 }
-/*搜索弹出模块*/ 
+/*搜索弹出模块*/
 .search_hide {
 	display: none
 }
@@ -6211,7 +6213,7 @@ select, textarea {
 p.vc_title {
 	padding: 5px 0 10px;
 	font-size: 14px;
-	color: #ff3300;
+	color: #3399cc;
 }
 table.general td .inputBg {
 	border: 1px #ddd solid;
@@ -6519,7 +6521,7 @@ dl.order_list dd {
 	line-height: 20px;
 }
 
-/*代码增加_star PC功能同步*/ 
+/*代码增加_star PC功能同步*/
 .field .login-68 {
 	width: 22%;
 	display: inline-block;
@@ -6728,7 +6730,7 @@ _top:       expression(eval(document.compatMode && document.compatMode=='CSS1Com
 	background: #ffffff;
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
-	color: #ff3300;
+	color: #3399cc;
 	font-weight: bold;
 }
 .sub_bonus {
@@ -6849,7 +6851,7 @@ _top:       expression(eval(document.compatMode && document.compatMode=='CSS1Com
 	color: #666
 }
 #pickup_point {
-	color: #ff3300
+	color: #3399cc
 }
 #pickup_point .pickup-location {
 	vertical-align: middle;

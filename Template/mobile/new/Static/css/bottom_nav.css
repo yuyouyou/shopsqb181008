@@ -14,7 +14,7 @@
 
 .vf_nav ul li span{ display:block; width:100%; height:20px; line-height:20px;}
 .vf_nav ul li a:active{color: #ff7171;}
-.gotop img{ display:block; width:40px; height:40px;}
+.gotop img{ display:block; width:40px;height: 64px;position: relative;}
 .vf_nav ul li em{ font-style:normal;}
 .global-nav__nav-shop-cart-num{
 position: absolute;left: 50%; top: 0px;color: #fff;text-align: center; font-weight:normal; font-size:12px; font-family:宋体;width:13px; height:13px; line-height:13px;}
