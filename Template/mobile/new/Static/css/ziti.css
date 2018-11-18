@@ -45,7 +45,7 @@
 	line-height: 24px;
 	height: 26px;
 	margin: 5px;
-	border-bottom: 2px solid #E71F19;
+	border-bottom: 2px solid #3399cc;
 }
 
 #area_menu a {
@@ -59,9 +59,9 @@
 	display: block;
 }
 #area_menu a.hover {
-	border: 2px solid #E71F19;
+	border: 2px solid #3399cc;
 	border-bottom: none;
-	background:#E71F19; color:#FFF;
+	background:#3399cc; color:#FFF;
 }
 #area_menu a:hover {
 color: #000;
@@ -110,7 +110,7 @@ color: #ffffff;
 	line-height:18px;
 	padding:5px 10px;
 	background:#fff;
-	border:1px solid #E71F19;
+	border:1px solid #3399cc;
 	text-align:center;
 	display:none;
 }
@@ -120,22 +120,22 @@ color: #ffffff;
 	height:10px;
 	background:url(../images/arrow.png) no-repeat 0 0;
 	position:absolute;
-	left:-6px; 
+	left:-6px;
 	top:9px;
 }
 .star_t{
-	width:140px; 
+	width:140px;
 	float:left;
 }
-.result{ 
-	float:left; 
-	height:24px; 
-	line-height:24px; 
-	padding-left:5px; 
+.result{
+	float:left;
+	height:24px;
+	line-height:24px;
+	padding-left:5px;
 	font-size:14px;
 }
 .result span{
-	font-weight:bold; 
+	font-weight:bold;
 	color:#f60;
 }
 
@@ -190,7 +190,7 @@ color: #ffffff;
 
 .block .tel {
   height: 22px;
-  line-height: 22px; 
+  line-height: 22px;
   background: #dadada;
   width: 100%;
   opacity: 0.8;
@@ -201,4 +201,4 @@ color: #ffffff;
   vertical-align: middle;
   margin: 0 5px 0 10px;
 }
-.title{ font-size:14px; font-weight:bold; width:96%; padding:0 2%; margin-top:20px; height:35px; line-height:35px; border-bottom:#E71F19 2px solid;}
+.title{ font-size:14px; font-weight:bold; width:96%; padding:0 2%; margin-top:20px; height:35px; line-height:35px; border-bottom:#3399cc 2px solid;}

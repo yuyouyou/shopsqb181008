@@ -1,7 +1,7 @@
 .Packages{ width:100%; overflow:hidden; background:#FFF;}
 .sanjiao{ display:block; width:15px; height:45px;background:#fff url(../images/sanjiao1.png) no-repeat left center;background-size: auto 20px; position:absolute; right:0px; top:46px; z-index:99999; padding-right:5px;}
 .all{ width:18%; overflow:hidden; float:left; height:50px;
- background:#DD2726 url(../images/sanjiao.png) no-repeat right 45% ;background-size: auto 18px;  text-indent:10px;}
+ background:#3399cc url(../images/sanjiao.png) no-repeat right 45% ;background-size: auto 18px;  text-indent:10px;}
 .all a{ font-size:14px; line-height:50px;}
 /* page_guide_slider */
 
@@ -10,11 +10,11 @@
 }
 .page_guide_item {
 	background-color:white;
-	float:left; 
+	float:left;
 }
 .page_guide_item_text{  font-size:14px; color:#333;  line-height:50px; overflow:hidden;}
 .page_guide_item_text a{ display:block;padding-left:15px; padding-right:15px; height:50px;}
-.page_guide_item_text .sele{color:#DD2726; border-bottom:1px solid #DD2726}
+.page_guide_item_text .sele{color:#3399cc; border-bottom:1px solid #3399cc}
 
 /*商家入住店铺信息*/
 .rzs_info{ width:100%; margin-top:10px; overflow:hidden; background:#FFF; padding-top:10px; padding-bottom:10px; margin-bottom:10px;}
@@ -32,8 +32,8 @@
 .rzs_info ul{width:95%; margin:auto; overflow:hidden;}
 .rzs_info ul li{ width:33.3%; float:left; height:40px; text-align:center}
 .rzs_info ul li span{float:left; font-size:13px; line-height:40px; color:#666;}
-.rzs_info ul li strong{float:left; font-size:13px; line-height:40px; color:#DD2726; font-weight:normal; text-align:left}
-.rzs_info ul li em{ float:left; width:13px; height:13px;font-size:10px; line-height:15px; color:#fff;border-radius: 3px; background:#DD2726; text-align:center; margin-left:1px; margin-top:12px; }
+.rzs_info ul li strong{float:left; font-size:13px; line-height:40px; color:#3399cc; font-weight:normal; text-align:left}
+.rzs_info ul li em{ float:left; width:13px; height:13px;font-size:10px; line-height:15px; color:#fff;border-radius: 3px; background:#3399cc; text-align:center; margin-left:1px; margin-top:12px; }
 
 .rzs_img{ width:100%; overflow:hidden}
 .rzs_img img{ width:100% !important; height:auto !important}

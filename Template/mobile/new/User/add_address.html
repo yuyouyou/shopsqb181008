@@ -30,18 +30,18 @@
         </div>
       </div>
       </header>
-      <include file="Public/menu"/>		  
+      <include file="Public/menu"/>
 <div id="tbh5v0">
-						
+
 <div class="addressmone">
   <form action="{:U('Mobile/User/add_address')}" method="post" onSubmit="return checkForm()">
 	<ul>
        <li>
-    	<span>收货人姓名</span>  
+    	<span>收货人姓名</span>
         <input name="consignee" id="consignee" type="text" value="{$address.consignee}" maxlength="12" placeholder="收货人姓名"/>
-		</li>          
+		</li>
        <li>
-          <span>地区</span>       
+          <span>地区</span>
           <input name='country' value='1' type="hidden">
 	             <select class="province_select"  name="province" id="province" onChange="get_city(this)">
                       <option value="0">请选择</option>
@@ -60,36 +60,36 @@
                     <volist name="district" id="p">
                         <option <if condition="$address['district'] eq $p['id']">selected</if>  value="{$p.id}">{$p.name}</option>
                     </volist>
-                </select>                 
+                </select>
                 <select class="di-bl fl seauii" name="twon" id="twon" <if condition="$address['twon'] gt 0 ">style="display:block;"<else/>style="display:none;"</if>>
                     <volist name="twon" id="p">
                         <option <if condition="$address['twon'] eq $p['id']">selected</if>  value="{$p.id}">{$p.name}</option>
                     </volist>
-                </select>          
+                </select>
         	</li>
            <li>
     		 <span>详细地址</span> <input type="text"  name="address" id="address" placeholder="详细地址" maxlength="100" value="{$address.address}"/>
 	       </li>
            <li>
-			<span>手机</span> 
+			<span>手机</span>
             <input type="text" name="mobile" value="{$address.mobile}" onpaste="this.value=this.value.replace(/[^\d-]/g,'')" onKeyUp="this.value=this.value.replace(/[^\d-]/g,'')" maxlength="15" placeholder="手机号码"/>
 	        </li>
             <li>
-	    		<span>邮政编码</span> 
-                <input type="text" name="zipcode" value="{$address.zipcode}" onpaste="this.value=this.value.replace(/[^\d]/g,'')" onKeyUp="this.value=this.value.replace(/[^\d]/g,'')" maxlength="10"  placeholder="邮政编码"/>
+	    		<span>微信号</span>
+                <input type="text" name="zipcode" value="{$address.zipcode}" maxlength="20"  placeholder="微信号"/>
 	        </li>
     	</ul>
             <div style=" height:50px"></div>
 				<div class="dotm_btn">
-                
+
                 <if condition="$_GET['source'] eq 'cart2'"> <!--如果是下订单时提交过了的页面-->
                      <input type="submit" value="保存并使用该地址" class="dotm_btn1 beett" />
 	                 <input type="hidden" name="source" value="{$_GET[source]}" />
                 <else/>
                      <input type="submit" value="保存" class="dotm_btn1" />
                 </if>
-                 
-                </div>		 
+
+                </div>
     </form>
 </div>        </div>
 <script>
@@ -120,12 +120,12 @@
             error += '手机号码格式有误 <br/>';
 		}
         if(error){
-		    layer.open({content:error,time:2});		
+		    layer.open({content:error,time:2});
             return false;
         }
-			 
+
         return true;
     }
-</script> 
+</script>
 </body>
 </html>
