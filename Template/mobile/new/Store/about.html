@@ -79,14 +79,14 @@
 		扫描二维码  关注有惊喜
 	</span>
 </div>
-<a href="tel:{$store.store_phone}" class="link" style=" color:#FFF;font-size:18px; ">联系卖家</a>
-
+<!--<a href="tel:{$store.store_phone}" class="link" style=" color:#FFF;font-size:18px; ">联系卖家</a>
+-->
 <div style=" height:40px;"></div>
 <div class="bottm_nav">
 	 <ul>
 	 	<li class="bian"><a href="{:U('Store/store_goods_class',array('store_id'=>$store[store_id]))}">店铺分类</a></li>
 	 	<li class="bian"><a href="{:U('Store/about',array('store_id'=>$store[store_id]))}">店铺简介</a></li>
-	 	<li><a href="tel:{$store.store_phone}">联系卖家</a></li>
+	 	<li onclick="follow_wx()"><a href="javascript:; ">联系他</a></li>
 	 </ul>
 </div>
 <script>
@@ -94,8 +94,8 @@
 $('#favoriteStore').click(function () {
   if (getCookie('user_id') == '') {
 	  if(confirm('请先登录')){
-		  window.location.href = "{:U('Mobile/User/login')}"; 
-	  }                     	
+		  window.location.href = "{:U('Mobile/User/login')}";
+	  }
   } else {
     $.ajax({
       type: 'post',
@@ -112,6 +112,16 @@ $('#favoriteStore').click(function () {
     });
   }
 });
+// 关注微信公众号二维码
+function follow_wx()
+{
+  layer.open({
+    type : 1,
+    title: '关注微信公众号',
+    content: '<img src="{$store.qrcode}" width="200">',
+    style: ''
+  });
+}
 </script>
 </body>
 </html>

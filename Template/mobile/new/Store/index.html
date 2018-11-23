@@ -60,7 +60,7 @@
 		<foreach name="store.mb_slide" key="key" item="vimg">
 		 <notempty name="vimg">
           <li><a href="{$store[mb_slide_url][$key]}"><img src="{$vimg}" width="100%" /></a></li>
-         </notempty> 
+         </notempty>
 		</foreach>
      	</ul>
 	</div>
@@ -69,25 +69,25 @@
 	</div>
 </div>
 <script type="text/javascript">
-	TouchSlide({ 
+	TouchSlide({
 		slideCell:"#scrollimg",
 		titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
-		mainCell:".bd ul", 
-		effect:"leftLoop", 
+		mainCell:".bd ul",
+		effect:"leftLoop",
 		autoPage:true,//自动分页
 		autoPlay:true //自动播放
 	});
 </script>
-  
+
    <div class="product_value">
   		<h2>店长推荐</h2>
   		<ul>
     	      <foreach name="recomend_goods" item="vo">
-	        <li> 
-	        <a href="{:U('Goods/goodsInfo',array('id'=>$vo[goods_id]))}"> <span> 
-	        <img src="{$vo.goods_id|goods_thum_images=200,200}" srcset="{$vo.goods_id|goods_thum_images=200,200}" srcd="{$vo.goods_id|goods_thum_images=200,200}" loaded="no"> </span> 
-	        <span class="p_info">{$vo.goods_name|getSubstr=0,16}</span> 
-	        <span class="price"> ￥{$vo.shop_price}元  </span> </a> 
+	        <li>
+	        <a href="{:U('Goods/goodsInfo',array('id'=>$vo[goods_id]))}"> <span>
+	        <img src="{$vo.goods_id|goods_thum_images=200,200}" srcset="{$vo.goods_id|goods_thum_images=200,200}" srcd="{$vo.goods_id|goods_thum_images=200,200}" loaded="no"> </span>
+	        <span class="p_info">{$vo.goods_name|getSubstr=0,16}</span>
+	        <span class="price"> ￥{$vo.shop_price}元  </span> </a>
 	        </li>
 	      </foreach>
     	</ul>
@@ -97,11 +97,11 @@
 		<h2>热卖单品 精挑细选</h2>
 	      <ul>
 	      <foreach name="hot_goods" item="vo">
-	        <li> 
-	        <a href="{:U('Goods/goodsInfo',array('id'=>$vo[goods_id]))}"> <span> 
-	        <img src="{$vo.goods_id|goods_thum_images=200,200}" srcset="{$vo.goods_id|goods_thum_images=200,200}" srcd="{$vo.goods_id|goods_thum_images=200,200}" loaded="no"> </span> 
-	        <span class="p_info">{$vo.goods_name|getSubstr=0,16}</span> 
-	        <span class="price"> ￥{$vo.shop_price}元  </span> </a> 
+	        <li>
+	        <a href="{:U('Goods/goodsInfo',array('id'=>$vo[goods_id]))}"> <span>
+	        <img src="{$vo.goods_id|goods_thum_images=200,200}" srcset="{$vo.goods_id|goods_thum_images=200,200}" srcd="{$vo.goods_id|goods_thum_images=200,200}" loaded="no"> </span>
+	        <span class="p_info">{$vo.goods_name|getSubstr=0,16}</span>
+	        <span class="price"> ￥{$vo.shop_price}元  </span> </a>
 	        </li>
 	      </foreach>
 		  </ul>
@@ -110,35 +110,44 @@
       <h2>新品上市 尝鲜价</h2>
       <ul>
 	      <foreach name="new_goods" item="vo">
-	        <li> 
-	        <a href="{:U('Goods/goodsInfo',array('id'=>$vo[goods_id]))}"> <span> 
-	        <img src="{$vo.goods_id|goods_thum_images=200,200}" srcset="{$vo.goods_id|goods_thum_images=200,200}" srcd="{$vo.goods_id|goods_thum_images=200,200}" loaded="no"> </span> 
-	        <span class="p_info">{$vo.goods_name|getSubstr=0,16}</span> 
-	        <span class="price"> ￥{$vo.shop_price}元  </span> </a> 
+	        <li>
+	        <a href="{:U('Goods/goodsInfo',array('id'=>$vo[goods_id]))}"> <span>
+	        <img src="{$vo.goods_id|goods_thum_images=200,200}" srcset="{$vo.goods_id|goods_thum_images=200,200}" srcd="{$vo.goods_id|goods_thum_images=200,200}" loaded="no"> </span>
+	        <span class="p_info">{$vo.goods_name|getSubstr=0,16}</span>
+	        <span class="price"> ￥{$vo.shop_price}元  </span> </a>
 	        </li>
 	      </foreach>
       </ul>
     </div>
- 
+
 <div style=" height:40px;"></div>
 <div class="bottm_nav">
 	 <ul>
 	 <li class="bian"><a href="{:U('Store/store_goods_class',array('store_id'=>$store[store_id]))}">店铺分类</a></li>
 	 <li class="bian"><a href="{:U('Store/about',array('store_id'=>$store[store_id]))}">店铺简介</a></li>
-	 <li><a href="tel:075586140485">联系卖家</a></li>
+	 <li onclick="follow_wx()"><a href="javascript:;">联系他</a></li>
 	 </ul>
 </div>
 <script>
 function goTop(){
 	$('html,body').animate({'scrollTop':0},600);
 }
-
+// 关注微信公众号二维码
+function follow_wx()
+{
+  layer.open({
+    type : 1,
+    title: '关注微信公众号',
+    content: '<img src="{$store.qrcode}" width="200">',
+    style: ''
+  });
+}
 //收藏店铺
 $('#favoriteStore').click(function () {
   if (getCookie('user_id') == '') {
 	  if(confirm('请先登录')){
-		  window.location.href = "{:U('Mobile/User/login')}"; 
-	  }                     	
+		  window.location.href = "{:U('Mobile/User/login')}";
+	  }
   } else {
     $.ajax({
       type: 'post',
@@ -156,6 +165,6 @@ $('#favoriteStore').click(function () {
   }
 });
 </script>
-<a href="javascript:goTop();" class="gotop"><img src="__STATIC__/images/topup.png"></a> 
+<a href="javascript:goTop();" class="gotop"><img src="__STATIC__/images/topup.png"></a>
 </body>
 </html>
