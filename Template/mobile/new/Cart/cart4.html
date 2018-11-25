@@ -33,7 +33,7 @@
         <li>请您在<span>{$pay_date}</span>前完成支付，否则订单将自动取消！：</li>
         <li >订单号：
             <em>
-                    <if condition="$master_order_sn neq ''">                        
+                    <if condition="$master_order_sn neq ''">
                         &nbsp;&nbsp;{$master_order_sn}
                     <else />
                         &nbsp;&nbsp;{$order['order_sn']}
@@ -42,16 +42,16 @@
         </li>
         <li>支付金额：
             <em>
-                    <if condition="$master_order_sn neq ''">                        
-                        ￥{$sum_order_amount}元                        
+                    <if condition="$master_order_sn neq ''">
+                        $A {$sum_order_amount}
                     <else />
-                    	￥{$order['order_amount']}元
-                    </if>                        
+                    	$A {$order['order_amount']}
+                    </if>
             </em>
         </li>
       </ul>
     </div>
-    
+
    <section class="order-info">
           <div class="order-list">
             <div class="content ptop0">
@@ -59,7 +59,7 @@
                 <div class="panel-body" id="pay_div"  >
                   <div class="title" id="zhifutitle" style="border-bottom:1px solid #eeeeee;"> <span class="i-icon-arrow-down i-icon-arrow-up" id="zhifuip"></span> <span class="text">支付方式</span> <a href="javascript:void(0)" title="修改商品列表" class="link">必选</a> <em class="qxz" id="emzhifu">请选择支付方式</em> </div>
                   <ul class="nav nav-list-sidenav" id="zhifu68" style="display:block; border-bottom:none;">
-                  <foreach name="paymentList" item="v"  key="k"> 
+                  <foreach name="paymentList" item="v"  key="k">
                     <li class="clearfix" name="payment_name">
                       <label>
                           <input type="radio"   value="pay_code={$v['code']}" class="c_checkbox_t" name="pay_radio" />
@@ -68,7 +68,7 @@
                           </div>
                       </label>
                     </li>
-                   </foreach> 
+                   </foreach>
                   </ul>
                 </div>
               </div>
@@ -97,7 +97,7 @@
         return;
         //微信JS支付
     }
-</script> 
+</script>
 <include file="Public/footer"/>
 </div>
 <include file="Public/footer_nav"/>

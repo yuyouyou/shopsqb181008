@@ -91,8 +91,8 @@ body { background-color: #f8f8f8; }
 
 .filtrate_btn li { width: 50%; float: left; }
 
-.filtrate_btn .reset { width:90%; margin:auto;background:#25C6FC; color: #fff; height: 36px; line-height: 36px; text-align: center; display: block; margin-right: 5px;-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; font-size:14px; }
-.filtrate_btn .submit { width:90%; margin:auto; background: #dd272c; color: #fff; height: 36px; line-height: 36px; text-align: center; display: block; border: none;-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+.filtrate_btn .reset { width:90%; margin:auto;background:#777777; color: #fff; height: 36px; line-height: 36px; text-align: center; display: block; margin-right: 5px;-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; font-size:14px; }
+.filtrate_btn .submit { width:90%; margin:auto; background: #3399cc; color: #fff; height: 36px; line-height: 36px; text-align: center; display: block; border: none;-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
 
 .filtrate_address { background-color: #fff; padding: 10px 0 5px 10px;}
 .filtrate_address li { padding: 1px; background-color: #f5f5f5; float: left; text-align: center; margin: 0 7px 5px 0; height:40px; line-height:40px; width: 75px; overflow: hidden; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;  }
@@ -264,15 +264,14 @@ background: url(../images/flow/shop-cart.png) no-repeat 5px -26px; background-si
 .touchweb-com_searchListBox.openList .item .active_box .active_tag:nth-child(-n+1) { display: inline-block; }
 .touchweb-com_searchListBox.openList .item .comment_box { height:50px; padding-left:3px; display:none;}
 .touchweb-com_searchListBox.openList .bug_car { border-left: none; }
-.touchweb-com_searchListBox .bug_car { position: absolute; bottom: 12px; right: 0; z-index: 2; width: 40px; height: 28px; color: #ff3c3c; font-size: 2.2rem; text-align: center; }
+.touchweb-com_searchListBox .bug_car { position: absolute; bottom: 12px; right: 0; z-index: 2; height: 25px;width: 25px;background: #3399cc;color: #3399cc;border-radius: 50%; font-size: 2.2rem; text-align: center; }
 .touchweb-com_searchListBox.openList .bug_car { border-left: none; }
 
 
 
 
 
-.touchweb-com_searchListBox .bug_car { position: absolute; bottom:12px; right: 0; z-index: 2; width: 40px; height: 28px; color: #ff3c3c; font-size: 2.2rem; text-align: center; }
-.touchweb-com_searchListBox .bug_car i { background: url(../images/category/cart.png) no-repeat center center; height: 30px; width: 40px; background-size: 30px 30px; display: block; }
+.touchweb-com_searchListBox .bug_car i { background: url(../images/index_flow.png) no-repeat -3px -1px; height: 30px; width: 40px; background-size: 30px 30px; display: block; }
 .touchweb-com_searchListBox .bug_car.sold_out { color: #bcbcbc; }
 .loading_banner { text-align: center; }
 .loading_banner .loading { background-image: url("../images/category/loading.png"); display: inline-block; margin: 10px 0; background-size: 12px; width: 12px; height: 12px; -webkit-animation: rotate 2s linear 0s infinite; animation: rotate 2s linear 0s infinite; }

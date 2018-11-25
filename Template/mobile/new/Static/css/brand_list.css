@@ -61,7 +61,7 @@ body{background: #F2F0F1}
 /*品牌列表*/
 .ccontainer{overflow: hidden;  padding-top: 14px;padding-bottom: 1px; width:95%; margin:0 auto;}
 .ccontainer h2{height: 35px;  line-height: 37px;    position: relative;  font-size: 18px; font-weight: normal;  text-indent: 15px;  color: #535353;margin-bottom: 4px;}
-.ccontainer h2 span{height: 17px;  width: 3px;  background: #f23015;  position: absolute;  display: block;  margin-top: 10px;  margin-left: 6px;}
+.ccontainer h2 span{height: 17px;  width: 3px;  background: #f23;  position: absolute;  display: block;  margin-top: 10px;  margin-left: 6px;}
 
 .jxyh_logo .brandLink {
 margin-left: 0;

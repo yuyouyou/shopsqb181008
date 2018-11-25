@@ -193,11 +193,11 @@ box-shadow: 0 0 1px #ccc; text-indent:-100px; overflow:hidden; }
 
 .p_info{ font-size:14px; line-height:20px; color:#333; height:40px; overflow:hidden}
 
-.price{font-size:14px; line-height:150%; color:#e41735;}
+.price{font-size:14px; line-height:150%; color:#3399cc;}
 
 .product_value ul li span font{ display:inline-block}
 
-.product_value ul li span .f1{font-size:14px; line-height:150%; color:#e41735}
+.product_value ul li span .f1{font-size:14px; line-height:150%; color:#3399cc}
 
 .product_value ul li span .f2{font-size: 14px;line-height: 150%;color: #999;text-decoration: line-through;}
 
@@ -231,7 +231,7 @@ box-shadow: 0 0 1px #ccc; text-indent:-100px; overflow:hidden; }
 
 .about_top dl p{ width:20%; height:70px; float:left}
 
-.about_top dl p a{ display:block; width:70px; height:30px; border:1px solid #FFF; font-size:16px; text-align:center; line-height:30px;color:#FFF;border-radius:5px;background:#e41735 }
+.about_top dl p a{ display:block; width:70px; height:30px; border:1px solid #FFF; font-size:16px; text-align:center; line-height:30px;color:#FFF;border-radius:5px;background:#3399cc }
 
 .about_main{ width:100%; background:#FFF; padding-top:10px; overflow:hidden; margin-top:10px;border-bottom:1px solid #dcdcdc;border-top:1px solid #dcdcdc; padding-bottom:10px; }
 
@@ -243,7 +243,7 @@ box-shadow: 0 0 1px #ccc; text-indent:-100px; overflow:hidden; }
 
 .hei{ color:#333}
 
-.red{ color:#e41735}
+.red{ color:#3399cc}
 
 
 
@@ -253,7 +253,7 @@ box-shadow: 0 0 1px #ccc; text-indent:-100px; overflow:hidden; }
 
 .about_main span img{ display:block; width:100%}
 
-.link{ display:block; width:80%; margin:auto; height:40px; background:#e41735; font-size:18px; line-height:40px; text-align:center; color:#FFF; margin-top:20px; margin-bottom:20px;}
+.link{ display:block; width:80%; margin:auto; height:40px; background:#3399cc; font-size:18px; line-height:40px; text-align:center; color:#FFF; margin-top:20px; margin-bottom:20px;}
 
 
 /*catalog.dwt分类页面css*/
@@ -300,7 +300,7 @@ box-shadow: 0 0 1px #ccc; text-indent:-100px; overflow:hidden; }
 
 .product_list ul li p{ width:100%; margin:auto; height:40px; overflow:hidden; font-size:14px; line-height:20px;color:#333; margin-top:5px;}
 
-.product_list ul li span{ display:block; width:100%; height:30px; font-size:16px; line-height:30px; color:#e41735}
+.product_list ul li span{ display:block; width:100%; height:30px; font-size:16px; line-height:30px; color:#3399cc}
 
 .cp_prom{ width:100%; height:100px; font-size:16px; line-height:100px; text-align:center; color:#666}
 

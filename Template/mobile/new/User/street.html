@@ -115,7 +115,7 @@
         <volist name="store['goods_array']['goods_list']" id="goods">
         <a href="{:U('Mobile/Goods/goodsInfo',array('id'=>$goods['goods_id']))}">
             <dl>
-                <dt><img src="{$goods['goods_id']|goods_thum_images=137,137}" class="B_eee"><em>￥{$goods['shop_price']}</em>
+                <dt><img src="{$goods['goods_id']|goods_thum_images=137,137}" class="B_eee"><em>$A {$goods['shop_price']}</em>
                 </dt>
                 <dd>{$goods['goods_name']}</dd>
             </dl>

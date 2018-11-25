@@ -107,24 +107,24 @@ a.orgBtn {background: #f60;border: 1px solid #ef6000;}
 </header>
 <include file="Public/menu"/>
 <div id="tbh5v0">
-	<div class="g-Total gray9">您的当前余额：<span class="orange arial">{$user.user_money}</span>元</div>
+	<div class="g-Total gray9">您的当前余额：<span class="orange arial">{$user.user_money}</span></div>
 	<form method="post"  id="recharge_form" action="{:U('Mobile/Payment/getPay')}">
 	<section class="clearfix g-member">
            <div class="g-Recharge">
                <ul id="ulOption">
-                   <li money="10"><a href="javascript:;" class="z-sel">10元<s></s></a></li>
-                   <li money="50"><a href="javascript:;">50元<s></s></a></li>
-                   <li money="100"><a href="javascript:;">100元<s></s></a></li>
-                   <li money="500"><a href="javascript:;">500元<s></s></a></li>
-                   <li money="1000"><a href="javascript:;">1000元<s></s></a></li>
+                   <li money="10"><a href="javascript:;" class="z-sel">10<s></s></a></li>
+                   <li money="50"><a href="javascript:;">50<s></s></a></li>
+                   <li money="100"><a href="javascript:;">100<s></s></a></li>
+                   <li money="500"><a href="javascript:;">500<s></s></a></li>
+                   <li money="1000"><a href="javascript:;">1000<s></s></a></li>
                    <li><b>
                        <input type="text" id="input_val" class="z-init" placeholder="输入金额" maxlength="8" value="{$order.account}"><s></s></b></li>
                </ul>
            </div>
 		<div class="clearfix mt10 m-round g-pay-ment g-bank-ct">
                <ul id="ulBankList" class="nav nav-list-sidenav">
-                   <li class="gray6">选择网银充值<em class="orange">10</em>元</li>
-                   <foreach name="paymentList" item="v"  key="k"> 
+                   <li class="gray6">选择网银充值<em class="orange">10</em></li>
+                   <foreach name="paymentList" item="v"  key="k">
                     <li class="clearfix" name="payment_name">
                       <label>
                           <input type="radio"  value="pay_code={$v['code']}" class="c_checkbox_t" name="pay_radio" <if condition="$order[pay_code] eq $v[code]">checked</if> />
@@ -133,7 +133,7 @@ a.orgBtn {background: #f60;border: 1px solid #ef6000;}
                           </div>
                       </label>
                     </li>
-                   </foreach> 
+                   </foreach>
                </ul>
            </div>
            <div class="mt10 f-Recharge-btn">

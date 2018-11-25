@@ -71,7 +71,7 @@
 <script type="text/javascript">
 	TouchSlide({
 		slideCell:"#scrollimg",
-		titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+		titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航素包裹层
 		mainCell:".bd ul",
 		effect:"leftLoop",
 		autoPage:true,//自动分页
@@ -87,7 +87,7 @@
 	        <a href="{:U('Goods/goodsInfo',array('id'=>$vo[goods_id]))}"> <span>
 	        <img src="{$vo.goods_id|goods_thum_images=200,200}" srcset="{$vo.goods_id|goods_thum_images=200,200}" srcd="{$vo.goods_id|goods_thum_images=200,200}" loaded="no"> </span>
 	        <span class="p_info">{$vo.goods_name|getSubstr=0,16}</span>
-	        <span class="price"> ￥{$vo.shop_price}元  </span> </a>
+	        <span class="price"> $A {$vo.shop_price}  </span> </a>
 	        </li>
 	      </foreach>
     	</ul>
@@ -101,7 +101,7 @@
 	        <a href="{:U('Goods/goodsInfo',array('id'=>$vo[goods_id]))}"> <span>
 	        <img src="{$vo.goods_id|goods_thum_images=200,200}" srcset="{$vo.goods_id|goods_thum_images=200,200}" srcd="{$vo.goods_id|goods_thum_images=200,200}" loaded="no"> </span>
 	        <span class="p_info">{$vo.goods_name|getSubstr=0,16}</span>
-	        <span class="price"> ￥{$vo.shop_price}元  </span> </a>
+	        <span class="price"> $A {$vo.shop_price}  </span> </a>
 	        </li>
 	      </foreach>
 		  </ul>
@@ -114,7 +114,7 @@
 	        <a href="{:U('Goods/goodsInfo',array('id'=>$vo[goods_id]))}"> <span>
 	        <img src="{$vo.goods_id|goods_thum_images=200,200}" srcset="{$vo.goods_id|goods_thum_images=200,200}" srcd="{$vo.goods_id|goods_thum_images=200,200}" loaded="no"> </span>
 	        <span class="p_info">{$vo.goods_name|getSubstr=0,16}</span>
-	        <span class="price"> ￥{$vo.shop_price}元  </span> </a>
+	        <span class="price"> $A {$vo.shop_price}  </span> </a>
 	        </li>
 	      </foreach>
       </ul>

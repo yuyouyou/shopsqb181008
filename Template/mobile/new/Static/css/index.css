@@ -173,8 +173,8 @@ background: url(../images/pub_main.png) no-repeat;background-size: auto 280px;ba
 .floor_body ul li .goods_name { font-size:12px; width:100%; margin:auto; color:#999; height:30px; overflow:hidden; margin:auto;
 course:hand;text-align:left; line-height:150%; padding-top:8px; padding-bottom:8px;}
 .floor_body ul li .price {width:100%; overflow:hidden; margin:auto; position:relative; border-top:1px solid #eeeeee; margin-top:5px;}
-.floor_body ul li .price .price_pro{  width:100%;  display: block;font-size:14px; color: #F23015; height:40px; line-height:40px; text-align:left}
-.floor_body ul li .btns{ position:absolute; display:block;right:5px;height:25px;width:25px;background: #f23; border-radius:50%; bottom:8px;}
+.floor_body ul li .price .price_pro{  width:100%;  display: block;font-size:14px; color: #f23; height:40px; line-height:40px; text-align:left}
+.floor_body ul li .btns{ position:absolute; display:block;right:5px;height:25px;width:25px;background: #3399cc; border-radius:50%; bottom:8px;}
 .floor_body ul li .btns img{ display:block; width:25px;height:25px; }
 
 /*新品recommend_best+recommend_hot+recommend_new*/
@@ -193,8 +193,8 @@ course:hand;text-align:left; line-height:150%; padding-top:8px; padding-bottom:8
 -webkit-box-orient: vertical;
 display: -webkit-box;}
 .scroll_hot .bd ul li .price {width:100%; margin:auto;position:relative; border-top:1px solid #eeeeee; margin-top:5px;}
-.scroll_hot .bd ul li .price .price_pro{  width:100%;  display: block; font-size:14px; color: #F23015; height:40px; line-height:40px;text-align:left;}
-.scroll_hot .bd ul li .btns{ position:absolute; display:block;right:5px;height:25px;width:25px;background: #f23; border-radius:50%; bottom:8px;}
+.scroll_hot .bd ul li .price .price_pro{  width:100%;  display: block; font-size:14px; color: #f23; height:40px; line-height:40px;text-align:left;}
+.scroll_hot .bd ul li .btns{ position:absolute; display:block;right:5px;height:25px;width:25px;background: #3399cc; border-radius:50%; bottom:8px;}
 .scroll_hot .bd ul li .btns img{display:block; width:25px;height:25px; }
 .scroll_hot .hd { height: 20px; overflow: hidden; text-align:center; background:#FFF}
 .scroll_hot .hd ul { display: inline-block; padding-top: 5px; }
@@ -235,6 +235,6 @@ box-shadow: 0 0 1px #ccc; text-indent:-100px; overflow:hidden; }
 .floor_body2 ul li .products_kuang img{ display:block;width:100%; margin:auto;}
 .floor_body2 ul li .goods_name { width:93%; margin:auto;text-align:left;height: 33px; overflow: hidden; color:#666; font-size:14px;line-height: 18px; -webkit-line-clamp: 2; -webkit-box-orient: vertical;display: -webkit-box; margin-top:8px; margin-bottom:8px;}
 .floor_body2 ul li .price {width:100%; margin:auto; position:relative; border-top:1px solid #eeeeee }
-.floor_body2 ul li .price .price_pro{  width:93%; margin:auto;  display: block;font-size:16px; color: #F23015; height:40px; line-height:40px;text-align:left;}
-.floor_body2 ul li .btns{ position:absolute; display:block;right:5px;height:25px;width:25px;background: #f23; border-radius:50%; bottom:8px;}
+.floor_body2 ul li .price .price_pro{  width:93%; margin:auto;  display: block;font-size:16px; color: #f23; height:40px; line-height:40px;text-align:left;}
+.floor_body2 ul li .btns{ position:absolute; display:block;right:5px;height:25px;width:25px;background: #3399cc; border-radius:50%; bottom:8px;}
 .floor_body2 ul li .btns img{ display:block; width:25px;height:25px; }

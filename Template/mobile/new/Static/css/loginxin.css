@@ -23,7 +23,7 @@ html, body { height: 100%; width: 100% }
 
 .enter-area{width: 100%;height: 20%;overflow: hidden;}
 .enter-item{width:90%;height:20px;padding:5px;border: 1px solid #ccc;border-radius: 5px;font-size: 12px;}
-.orange, .orange:hover { background: #f23; border: 1px solid #f23;color: #fff }
+.orange, .orange:hover { background: #3399cc; border: 1px solid #3399cc;color: #fff }
 .button { display:block;  width: 90%; border-radius: 5px;  padding:5px; font-size: 20px;margin:auto; margin-top:20px;}
 .ng-foot{overflow: hidden;width: 93%;margin: auto;margin-top: 10px;}
 .ng-foot .ng-cookie-area{font-size: 14px;text-align: left;color: #999; vertical-align: middle; width: 35%; float: left; cursor: pointer }
@@ -68,7 +68,7 @@ html, body { height: 100%; width: 100% }
 
 .tips_a{width:70%;margin:20px auto 0px;padding: 5px}
 .tips_a img{width:150px;}
-.tips .tishi{border: 1px solid #f23;  padding: 5px;  color: #fff;  background: #F34;  border-radius: 5px;  width: 40%;  display: inline-block;  margin: auto; font-size: 14px;margin: 0px 3px;}
+.tips .tishi{border: 1px solid #3399cc;  padding: 5px;  color: #fff;  background: #F34;  border-radius: 5px;  width: 40%;  display: inline-block;  margin: auto; font-size: 14px;margin: 0px 3px;}
 
 
 

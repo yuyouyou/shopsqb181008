@@ -14,9 +14,9 @@
 </div>
 </header>
 <include file="Public/menu"/>
-<div id="tbh5v0">			
+<div id="tbh5v0">
 <div style="background:#fff;">
-<div class="user_login_title"><h2><em>账户余额</em><span>￥{$user['user_money']}元</span></h2></div>
+<div class="user_login_title"><h2><em>账户余额</em><span>$A {$user['user_money']}</span></h2></div>
 <empty name="account_log">
 <p class="font12">您没有任何资金的变动哦！</p>
 <else/>
@@ -39,13 +39,13 @@
 </notempty>
 </empty>
 </div>
-<a href="javascript:goTop();" class="gotop"><img src="__STATIC__/images/topup.png"></a> 
+<a href="javascript:goTop();" class="gotop"><img src="__STATIC__/images/topup.png"></a>
 </div>
 <script>
 var  page = 1;
- /*** ajax 提交表单 查询订单列表结果*/  
+ /*** ajax 提交表单 查询订单列表结果*/
  function ajax_sourch_submit()
- {	 	 	 
+ {
         page += 1;
 		$.ajax({
 			type : "GET",
@@ -58,8 +58,8 @@ var  page = 1;
 				else
 				    $(".Funds > ul").append(data);
 			}
-		}); 
- } 
+		});
+ }
 </script>
 
 <script type="text/javascript">
