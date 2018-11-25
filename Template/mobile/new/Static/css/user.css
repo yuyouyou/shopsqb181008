@@ -94,7 +94,7 @@
 .order_list dl .pice{ width:28%; float:left; overflow:hidden; font-weight:normal; font-size:14px; line-height:120%; color:#333; text-align:right}
 .order_list dl .pice em{ display:block; width:100%; font-size:12px; color:#666; line-height:20px; font-style:normal;}
 .order_list .pic{width:95%; margin:auto; overflow:hidden;border-bottom:1px solid #eeeeee; height:50px; text-align:right; font-size:14px; line-height:50px; color:#000}
-.order_list .pic strong{display:inline-block;font-size:18px; line-height:50px; color:#e41735;font-weight:normal;}
+.order_list .pic strong{display:inline-block;font-size:18px; line-height:50px; color:#3399cc;font-weight:normal;}
 .anniu{ height:50px; text-align:right;}
 .anniu a{ display:inline-block; margin-top:10px; width:80px; height:30px; font-size:14px; line-height:30px; background:#3399cc; color:#fff; text-align:center;border-radius:5px;}
 .anniu span{display:inline-block; margin-top:10px; width:80px; height:29px;font-size:14px; line-height:29px; border:1px solid #666; text-align:center;border-radius:5px; color:#666}
@@ -114,7 +114,7 @@
 .detail_dowm{ width:100%; background:#f4f4f4; height:50px; position:fixed; max-width: 640px;bottom:0px; border-top:1px solid #e6e5e5; padding-bottom:5px;}
 .anniu1{ width:95%; margin:auto; height:50px; text-align:right}
 .anniu1 a{ display:inline-block; margin-top:5px; width:80px; height:40px; font-size:14px; line-height:40px; border:1px solid #666; color:#666; text-align:center;border-radius:5px;}
-.anniu1 span{display:inline-block; margin-top:5px; width:80px; height:40px;font-size:14px; line-height:40px; border:1px solid #e41735; text-align:center;border-radius:5px;}
+.anniu1 span{display:inline-block; margin-top:5px; width:80px; height:40px;font-size:14px; line-height:40px; border:1px solid #3399cc; text-align:center;border-radius:5px;}
 .anniu1 strong{ display:inline-block;margin-top:5px; height:40px; font-size:14px; line-height:40px; color:#F60; font-weight:normal; text-align:left; margin-right:10px;}
 .anniu1 strong img{  margin-top:-10px;}
 
@@ -141,15 +141,15 @@
 .ord_dingdan .ord_name p{ width:95%; margin:auto;}
 .ord_dingdan .ord_name p a{ display:block; font-size:14px; line-height:18px; color:#333}
 .ord_dingdan .ord_name span{ display:block; width:95%; margin:auto; font-size:13px; line-height:150%; color:#666;}
-.ord_dingdan .ord_name strong{ display:block; width:95%; margin:auto; font-size:13px; line-height:150%; color:#e41735;}
+.ord_dingdan .ord_name strong{ display:block; width:95%; margin:auto; font-size:13px; line-height:150%; color:#3399cc;}
 .xiaoji{ width:90%; margin:auto; text-align:right; height:30px; font-size:14px; color:#666; line-height:30px;}
-.xiaoji strong{ color:#e41735;font-size:18px;}
+.xiaoji strong{ color:#3399cc;font-size:18px;}
 .zhifu{display:block; height:25px;right:5px;text-align:center; font-size:14px; line-height:25px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;background-color:#5D6B85; margin-top:10px; width:60%; margin:auto}
 .zhif{ display:block; line-height:25px;}
 .jiage{ width:100%;margin-right:8px; overflow:hidden;text-align:right; font-size:14px; line-height:150%; color:#333; padding-top:10px; padding-bottom:10px;}
 .jiage p{ width:80%; float:right; margin-right:10px;}
-.price{ color:#e41735}
-.price1{ color:#e41735; font-size:20px;}
+.price{ color:#3399cc}
+.price1{ color:#3399cc; font-size:20px;}
 .qita{ width:100%; overflow:hidden; margin-top:10px; background:#FFF; border-bottom:1px solid #CCC; border-top:1px solid #CCC;}
 .subNav{ width:100%; height:40px; font-size:16px; line-height:40px; color:#333; text-indent:10px;}
 .navContent{ width:90%; margin:auto; overflow:hidden;}
@@ -166,10 +166,10 @@
 .shouchang ul li .order_info{ width:73%; float:right; overflow:hidden;}
 .shouchang ul li .order_info dl dt{ width:100%; font-size:14px; line-height:150%; color:#333;}
 .shouchang ul li .order_info dl dd{ width:100%; font-size:14px; line-height:150%; color:#333}
-.shouchang ul li .order_info dl dd strong{ color:#e41735}
+.shouchang ul li .order_info dl dd strong{ color:#3399cc}
 .shouchang ul li .dingdancaozuo{ position:absolute; right:0px; bottom:15px;}
 .shouchang ul li .dingdancaozuo a{ display:block; float:left; padding-left:10px; padding-right:10px;height:25px; font-size:13px; line-height:25px; text-align:center; color:#666}
-.s_flow{ border-radius:25px; border:1px solid #e41735; margin-right:10px; background:#e41735}
+.s_flow{ border-radius:25px; border:1px solid #3399cc; margin-right:10px; background:#3399cc}
 .s_out{ border-radius:25px; border:1px solid #999; margin-right:10px; background:#999}
 .font12{ font-size:18px; line-height:50px; text-align:center; color:#333}
 /*收藏店铺*/
@@ -212,7 +212,7 @@
 .pingjia dl dt img{ display:block; width:95%; float:left}
 .pingjia dl dd{ width:75%; float:left; overflow:hidden}
 .pingjia dl dd span{ display:block; width:100%; overflow:hidden; font-size:14px; line-height:150%; color:#000}
-.pingjia dl dd strong{ display:block; width:100%; overflow:hidden; font-size:16px; line-height:150%; color:#e41735; font-weight:normal;}
+.pingjia dl dd strong{ display:block; width:100%; overflow:hidden; font-size:16px; line-height:150%; color:#3399cc; font-weight:normal;}
 .pingjia .remark{display: inline-block;float:right; width: 80px; height:36px;border: 1px solid #ccc; font-size: 16px;line-height: 36px;color: #999;text-align: center;border-radius: 5px;}
 .pj_zhuangtai{ width:95%; margin:auto; overflow:hidden; border-top:1px solid #eeeeee; text-align:right; margin-top:10px;font-size:14px; line-height:40px;color:#999; padding-top:10px;}
 .pj_zhuangtai a{ display:inline-block; width:80px; height:40px; border:1px solid #ccc; font-size:16px; line-height:40px; color:#999; text-align:center;border-radius:5px; }
@@ -239,8 +239,8 @@
 .haoping a{ display:inline-block;padding-left:10px; padding-right:15px; overflow:hidden; border-radius:20px; font-size:16px; line-height:25px; margin-left:10px; margin-right:10px;}
 .haoping a em{ display:inline-block; width:25px; height:25px; margin-right:5px;}
 .haoping a em img{ width:25px; height:25px;}
-.clo1{ color:#e41735}
-.clo1 em{ background:#e41735;border-radius: 50%; }
+.clo1{ color:#3399cc}
+.clo1 em{ background:#3399cc;border-radius: 50%; }
 .clo2{ color:#F90}
 .clo2 em{ background:#F90;border-radius: 50%; }
 .clo3{ color:#999}
@@ -390,16 +390,16 @@
 .Funds ul{ margin:auto; padding-top:8px; padding-bottom:8px;}
 .Funds ul .Funds_li{ position: relative; padding: 15px 10px; border-bottom: 1px dotted #ccc;}
 .Funds ul .Funds_li .icon{ display:block;width:9px; height:9px; background:#666; position:absolute;top:42%;left:-15px;border-radius:5px;}
-.Funds ul .Funds_li .icon.on{ background:#e41735;}
+.Funds ul .Funds_li .icon.on{ background:#3399cc;}
 .Funds ul li strong{ display:inline-block; width:30%;}
 .Funds ul li span{ display:block; font-size:14px; color:#666; line-height:24px;}
-.Funds ul li span em{ color:#e41735;}
+.Funds ul li span em{ color:#3399cc;}
 .funds_dot{ width:100%; padding-top:10px; padding-bottom:10px; font-size:16px; line-height:30px; color:#666; text-align:center}
 #OrderList h3 .fr{ padding-right:10px; font-size:12px; float:right;}
 .user_login_title{ width:100%; overflow:hidden; background:#F5F5F5; height:100px; border-bottom:1px solid #ccc}
 .user_login_title h2{ text-align:center; width:90%; margin:auto; overflow:hidden; font-weight:normal}
-.user_login_title h2 em{ font-style:normal; font-size:14px; line-height:100px; color:#e41735}
-.user_login_title h2 span{ font-size:34px; color:#e41735; line-height:100px;}
+.user_login_title h2 em{ font-style:normal; font-size:14px; line-height:100px; color:#3399cc}
+.user_login_title h2 span{ font-size:34px; color:#3399cc; line-height:100px;}
 /*收货地址*/
 .smart-result table tr.odd {
   background: #f6f6f6;
@@ -488,14 +488,14 @@
 .kd_wl dl dd strong{ display:block; padding-bottom:10px; width:95%;float:right; font-size:12px; color:#666; line-height:150%; font-weight:normal}
 /*储值卡充值*/
 .vc_title{ width:95%; height:50px; margin:auto; font-size:14px; line-height:50px; color:#666; text-align:left; border-bottom:1px solid #eeeeee; margin-bottom:10px; font-weight:normal}
-.vc_title strong{ font-size:18px; color:#e41735}
+.vc_title strong{ font-size:18px; color:#3399cc}
 .Top{ width:95%; overflow:hidden; margin:auto}
 .Top dl{ width:100%; overflow:hidden;}
 .Top dl dt{ width:15%; height:40px; float:left; font-size:14px; line-height:40px; color:#666}
 .Top dl dd{ width:85%; float:left; height:40px;}
 .Top dl dd font{ line-height:40px;}
 .Top dl dd input{border: 1px solid #DFDFDF; height:30px; line-height:30px; width:80%; padding-left: 5px; -webkit-appearance: none; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; border-radius: 0; -webkit-rtl-ordering: logical; -webkit-user-select: text; cursor: auto; background-color: white; font-size:14px; line-height:30px;}
-.Top p{ width:90%; margin:auto; height:30px; font-size:14px; line-height:30px; color:#e41735; text-align:right}
+.Top p{ width:90%; margin:auto; height:30px; font-size:14px; line-height:30px; color:#3399cc; text-align:right}
 /*晒单*/
 .shaidan{ width:95%; margin:auto;overflow:hidden; border-top:1px solid #eeeeee; margin-top:10px; padding-top:20px;}
 .shaidan h2{ width:20%; margin:auto; height:40px; font-size:18px; color:#333; line-height:40px; float:left; font-weight:normal}

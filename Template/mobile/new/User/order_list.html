@@ -47,7 +47,7 @@
 		          <dt><img src="{$good.goods_id|goods_thum_images=200,200}"></dt>
 		          <dd class="name"><strong>{$good.goods_name}</strong>
 		          <span>{$good.spec_key_name} </span></dd>
-		          <dd class="pice">￥{$good['member_goods_price']}元<em>x{$good['goods_num']}</em></dd>
+		          <dd class="pice">$A {$good['member_goods_price']}<em>x{$good['goods_num']}</em></dd>
 				  <dd class="pice">
                   	<em>
                     	  <if condition="$list.return_btn eq 1">
@@ -58,7 +58,7 @@
 		          </dl>
 	          </volist>
           	</a>
-          <div class="pic">共{$list.goods_list|count}件商品<span>实付：</span><strong>￥{$list['order_amount']}元</strong></div>
+          <div class="pic">共{$list.goods_list|count}件商品<span>实付：</span><strong>$A {$list['order_amount']}</strong></div>
           <div class="anniu" style="width:95%">
                 <if condition="$list.cancel_btn eq 1"><span onClick="cancel_order({$list.order_id})">取消订单</span></if>
                 <if condition="$list.pay_btn eq 1"><a href="{:U('Mobile/Cart/cart4',array('order_id'=>$list['order_id']))}">立即付款</a></if>
