@@ -38,10 +38,10 @@ button {
 .search_mid ul{ width:100%; overflow:hidden}
 .search_mid ul li {cursor: pointer;float: left;height:30px;line-height: 25px;text-align: center;width:70px; font-size:14px; line-height:30px; text-align:center; color:#333;}
 
-.search-type .cur,.search_mid ul li.cur{background:#E31939;color:#fff;}
+.search-type .cur,.search_mid ul li.cur{background:#3399cc;color:#fff;}
 .searchdotm{ width:100%; overflow:hidden;}
 
-.mallSearch-input {width:99%; border:2px solid #E31939; height:35px;float:left; overflow:hidden; margin:auto; position:relative  }
+.mallSearch-input {width:99%; border:2px solid #3399cc; height:35px;float:left; overflow:hidden; margin:auto; position:relative  }
 .mallSearch-input .s-combobox-input{ display:block; width:100%; height:15px; font-size:14px; line-height:25px;color:#999;  -webkit-appearance: none; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; border-radius: 0; -webkit-rtl-ordering: logical; -webkit-user-select: text; cursor: auto; border:0; padding-top:10px; padding-bottom:10px; padding-left:10px}
 .mallSearch-input .button{ position:absolute; display:block; width:30px; height:30px; right:2px; bottom:3px; background:url(../images/search.png) no-repeat center center; border:0px;}
 

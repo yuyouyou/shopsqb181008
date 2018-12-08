@@ -5,7 +5,7 @@
 			<li> <a href="{:U('Index/index')}">
 			    <i class="vf_1"></i>
 			    <span>首页</span></a></li>
-			<li><a href="tel:{$tpshop_config['shop_info_phone']}">
+			<li onclick="follow_wx()"><a href="javascript:;">
 			    <i class="vf_2"></i>
 			    <span>客服</span></a></li>
 			<li><a href="{:U('Goods/categoryList')}">
@@ -27,6 +27,22 @@
 </div>
 <script type="text/javascript">
 $(document).ready(function(){
+		var getCookie = function(sName)
+		{
+			// cookies are separated by semicolons
+			var aCookie = document.cookie.split("; ");
+			for (var i=0; i < aCookie.length; i++)
+			{
+				// a name/value pair (a crumb) is separated by an equal sign
+				var aCrumb = aCookie[i].split("=");
+				if (sName == aCrumb[0])
+					return decodeURIComponent(aCrumb[1]);
+			}
+
+			// a cookie with the requested name does not exist
+			return null;
+		}
+
 	  var cart_cn = getCookie('cn');
 	  if(cart_cn == ''){
 		$.ajax({
@@ -40,6 +56,17 @@ $(document).ready(function(){
 	  }
 	  $('#cart_quantity').html(cart_cn);
 });
+
+// 关注微信公众号二维码
+function follow_wx()
+{
+layer.open({
+	type : 1,
+	title: '关注微信公众号',
+	content: '<img src="/Template/mobile/new/Static/images/wechat_contact.jpeg" width="200">',
+	style: ''
+});
+}
 </script>
 <!-- 微信浏览器 调用微信 分享js-->
 <if condition="$signPackage neq null">

@@ -47,7 +47,7 @@
 .info_right { color: #333333; width: 100%; float: left; height: 50px; font-size: 16px; line-height: 50px; overflow: hidden; }
 .product_info .price { width: 50%; font-size: 24px; line-height: 50px; color: #3399cc; }
 .group_details { color: #999; font-size: 12px; }
-.info_dottm .name { width: 74%; float: left; height: 50px; font-size: 16px; line-height: 25px; color: #333; padding-left: 3%; padding-right: 3%; overflow: hidden; }
+.info_dottm .name { width: 92%; float: left; height: 50px; font-size: 16px; line-height: 25px; color: #333; padding-left: 3%; padding-right: 3%; overflow: hidden; }
 .info_dottm .right { width: 20%; float: left; height: 50px; font-size: 16px; color: #333; border-left: 1px solid #CCC; margin-left: -1px; text-align: center }
 .info_dottm .right .share { width: 50px; height: 50px; margin: auto }
 .info_dottm .right .share img { width: 50px; height: 50px; }
