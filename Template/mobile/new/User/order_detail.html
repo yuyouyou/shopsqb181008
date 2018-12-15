@@ -65,12 +65,12 @@
 			<h3>
                 联系电话：{$store['store_phone']}
             </h3>
-            <h3>
+            <!--<h3>
                 联系卖家：
                 <a href="mqqwpa://im/chat?chat_type=wpa&uin={$store['store_qq']}&version=1&src_type=web&web_src=oicqzone.com" target="_blank">
                     <img src="__PUBLIC__/images/qq.gif">
                 </a>
-            </h3>
+            </h3>-->
 			</dd>
 			</dl>
 
@@ -131,8 +131,8 @@
                 <if condition="$order_info.pay_btn eq 1"><a href="{:U('Mobile/Cart/cart4',array('order_id'=>$order_info['order_id']))}" class="on_comment">立即付款</a></if>
                 <if condition="$order_info.receive_btn eq 1"><a href="{:U('Mobile/User/order_confirm',array('id'=>$order_info['order_id']))}" class="on_comment">收货确认</a></if>
                 <if condition="$order_info.shipping_btn eq 1"><a href="http://www.kuaidi100.com/" target="_blank" class="on_comment">查看物流</a></if>
-                <if condition="$order_info.return_btn eq 1"><a href="mqqwpa://im/chat?chat_type=wpa&uin={$store['store_qq']}&version=1&src_type=web&web_src=oicqzone.com" target="_blank" class="on_comment">联系卖家</a></if>
-			</div>
+<!--                <if condition="$order_info.return_btn eq 1"><a href="mqqwpa://im/chat?chat_type=wpa&uin={$store['store_qq']}&version=1&src_type=web&web_src=oicqzone.com" target="_blank" class="on_comment">联系卖家</a></if>
+-->			</div>
 		</div>
 	</div>
 </div>
