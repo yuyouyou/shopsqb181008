@@ -1,13 +1,13 @@
 <script type="text/javascript" src="__PUBLIC__/js/jquery-1.10.2.min.js"></script>
 <script src="__PUBLIC__/js/global.js"></script>
-<script src="__PUBLIC__/js/layer/layer.js"></script> 
+<script src="__PUBLIC__/js/layer/layer.js"></script>
 <link rel="stylesheet" type="text/css" href="__STATIC__/css/common.min.css">
 <link rel="stylesheet" type="text/css" href="__STATIC__/css/main.min.css">
 <div class="fn-cms-top">
 <adv pid="1" limit="1" item="v">
 <div fnp="m-top-banner" style="background:{$v.bgcolor};" class="m-top-banner rel editable" moduleId="2010053" style="position:relative;min-height:35px;">
 	 <div class="bar container">
-	 	<a class="img-small" <if condition="$v['target'] eq 1">target="_blank"</if> href="{$v.ad_link}"> <img class="img100" src="{$v[ad_code]}"  title="{$v[title]}" style="{$v[style]}"/></a>   
+	 	<a class="img-small" <if condition="$v['target'] eq 1">target="_blank"</if> href="{$v.ad_link}"> <img class="img100" src="{$v[ad_code]}"  title="{$v[title]}" style="{$v[style]}"/></a>
 	 </div>
 	 <i data-role="close" class="icon icon-close"></i>
 </div>
@@ -22,7 +22,7 @@
       <li class="fl J_login_status dn islogin"><a href="{:U('Home/user/index')}" class="userinfo" title="" target="_self"></a>
       	<a href="{:U('Home/user/logout')}" style="margin:0 10px;" title="退出" target="_self">退出</a></li>
       <li class="fl sep"></li>
-      <!-- 
+      <!--
       <li class="fl select-city dropdown">
         <span class="menu-item">
         <span>送货至：</span>
@@ -47,7 +47,7 @@
           <li><a class="J_chgurl" target="_blank" href="{:U('/Home/User/comment')}">我的评论</a></li>
         </ul>
       </li>
-      <li class="fl sep"></li> 
+      <li class="fl sep"></li>
       <li class="fl dropdown mobile-feiniu"><a class="menu-item" href=""><i class="fl ico"></i>
         <span class="fl">手机访问</span>
         <i class="dd"></i></a>
@@ -67,7 +67,7 @@
         <div class="sub-panel wx-box">
           <span class="arrow-b">◆</span>
           <span class="arrow-a">◆</span>
-          <p class="n"> 扫描二维码 <br>	江油购物网官方微信 </p>
+          <p class="n"> 扫描二维码 <br>	YMC Mall官方微信 </p>
           <img src="__STATIC__/images/qrcode_vmall_app01.png"></div>
       </li>
     </ul>
@@ -117,7 +117,7 @@
     </div>
     <div fnp="m-top-search-form" class="m-top-search-form fl">
      <form name="sourch_form" id="sourch_form" method="post" action="{:U("/Home/Goods/search")}">
-        <div data-role="form-inner" class="s-form"><i class="s-ico"></i>         
+        <div data-role="form-inner" class="s-form"><i class="s-ico"></i>
 		 <input type="text" data-role="input-search" autocomplete="off" class="fl s-input" name="q" id="q" value="<?php echo I('q'); ?>" placeholder="搜索关键字"/>
           <a data-role="btn" href="javascript:void(0);" class="s-btn fl" onclick="if($.trim($('#q').val()) != '') $('#sourch_form').submit();">搜索</a>
         </div>
@@ -152,23 +152,23 @@
         </ul>
       </div>-->
     </div>
-     
+
     <ul class="main-nav">
       <li class="nav-item"><a class="menu-item <if condition=" CONTROLLER_NAME eq 'Index' ">menu-item-active"</if> target="_blank" href="/" style="overflow: visible;">首页 </a></li>
       <tpshop sql="SELECT * FROM `__PREFIX__navigation` where is_show = 1 ORDER BY `sort` DESC" key="k" item='v'>
-       <li class="nav-item"><a  style="overflow: visible;"   href="{$v[url]}" 
+       <li class="nav-item"><a  style="overflow: visible;"   href="{$v[url]}"
        		<?php  if($_SERVER['REQUEST_URI']==str_replace('&amp;','&',$v[url])){ echo "class='menu-item menu-item-active'";}
        		else{ echo "class='menu-item'"; } ?>> {$v[name]} </a></li>
       </tpshop>
       <li class="nav-item"><a class="menu-item "  href="" style="overflow: visible;">官方网站<i class="e-hot"></i></a></li>
-    </ul>     
+    </ul>
     </div>
 </div>
 <div>
   <div class="J_side_nav_trigger"></div>
 </div>
 </div>
-<script type="text/javascript"> 
+<script type="text/javascript">
 $(document).ready(function(){
 	get_cart_num();
 	var uname= getCookie('uname');
@@ -188,11 +188,11 @@ function get_cart_num(){
 	$.ajax({
 		type : "GET",
 		url:"/index.php?m=Home&c=Cart&a=header_cart_list",//+tab,
-		success: function(data){								 
+		success: function(data){
 			cart_cn = getCookie('cn');
-			$('#cart_quantity').html(cart_cn);					
+			$('#cart_quantity').html(cart_cn);
 		}
-	});	
+	});
   }
   $('#cart_quantity').html(cart_cn);
   $('#miniCartRightQty').html(cart_cn);
