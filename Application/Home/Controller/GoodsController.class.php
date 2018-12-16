@@ -31,7 +31,7 @@ class GoodsController extends BaseController {
         $goods_id = I("get.id");
         $goods = M('Goods')->where(array('goods_id'=>$goods_id))->find();
         if(empty($goods) || ($goods['is_on_sale'] == 0)){
-        	$this->error('该商品已经下架',U('Index/index'));
+        	$this->error('该商品已经下架',U('Index/Index'));
         }
         if($goods['brand_id']){
             $brnad = M('brand')->where("id =".$goods['brand_id'])->find();

@@ -292,7 +292,7 @@ class DecorationController extends BaseController{
 			$this->_output_decoration_info($decoration_info);
 		} else {
 			//showMessage(L('param_error'), '', 'error');
-			$this->error('您还没有开启店铺装修',U('Index/index'));			
+			$this->error('您还没有开启店铺装修',U('Index/Index'));			
 		}
 		$this->assign('control_flag',1);
 		$this->assign('store_id',$_SESSION['store_id']);

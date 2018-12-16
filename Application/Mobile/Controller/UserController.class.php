@@ -83,7 +83,7 @@ class UserController extends MobileBaseController
         setcookie('cn', '', time() - 3600, '/');
         setcookie('user_id', '', time() - 3600, '/');
         //$this->success("退出成功",U('Mobile/Index/index'));
-        header("Location:" . U('Mobile/Index/index'));
+        header("Location:" . U('Mobile/Index/Index'));
     }
 
     /*

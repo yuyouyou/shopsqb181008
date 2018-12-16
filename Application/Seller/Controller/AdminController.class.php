@@ -122,7 +122,7 @@ class AdminController extends BaseController {
      */
     public function login(){
         if(session('?seller_id') && session('seller_id')>0){
-             $this->error("您已登录",U('Index/index'));
+             $this->error("您已登录",U('Index/Index'));
         }
       
         if(IS_POST){
@@ -150,7 +150,7 @@ class AdminController extends BaseController {
 						session('store_id',$seller['store_id']);
 						M('seller')->where(array('seller_id'=>$seller['seller_id']))->save(array('last_login_time'=>time()));
 						sellerLog('商家管理中心登录',__ACTION__);
-						$url = session('from_url') ? session('from_url') : U('Index/index');
+						$url = session('from_url') ? session('from_url') : U('Index/Index');
 						exit(json_encode(array('status'=>1,'url'=>$url)));
 					}else{
 						exit(json_encode(array('status'=>0,'msg'=>'账号密码不正确')));

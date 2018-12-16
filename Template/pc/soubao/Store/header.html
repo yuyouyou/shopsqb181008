@@ -115,10 +115,10 @@ $(function(){
 	    <if condition="$user.user_id gt 0">
 	                         您好 <span><a href="{:U('User/index')}">{$user.nickname}</a>
 	   		<div class="nc-grade-mini" style="cursor:pointer;" onClick="javascript:go();">V0</div></span> 
-	   		欢迎回来，<a href="{:U('Index/index')}"  title="首页" alt="首页">
+	   		欢迎回来，<a href="{:U('Index/Index')}"  title="首页" alt="首页">
 	   		<span>搜豹网络</span></a> <span>[<a href="{:U('User/logout')}">退出</a>] </span>
 	   <else/>
-	    	Hi，欢迎来 <a href="{:U('Index/index')}" title="首页" alt="首页">搜豹网络</a>
+	    	Hi，欢迎来 <a href="{:U('Index/Index')}" title="首页" alt="首页">搜豹网络</a>
 	 		<a href="{:U('User/login')}">请登录</a></span> <span><a href="{:U('User/register')}">免费注册</a></span>
 	    </if>
    </div>
@@ -283,7 +283,7 @@ $(function() {
 <!-- PublicHeadLayout Begin -->
 <div class="header-wrap">
   <header class="public-head-layout wrapper">
-    <h1 class="site-logo"><a href="{:U('Index/index')}"><img src="__STATIC__/images/newLogo.png" class="pngFix"></a></h1>
+    <h1 class="site-logo"><a href="{:U('Index/Index')}"><img src="__STATIC__/images/newLogo.png" class="pngFix"></a></h1>
 	<div class="heade_store_info">
     	<div class="slogo">
         	<a href="{:U('Store/index',array('store_id'=>$store[store_id]))}" title="搜豹网络" class="store_name">{$store.store_name}</a>

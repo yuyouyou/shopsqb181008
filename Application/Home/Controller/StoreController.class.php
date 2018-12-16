@@ -27,7 +27,7 @@ class StoreController extends Controller
         $store_info = M('store')->where(array('store_id' => $store_id))->find();
         if ($store_info) {
         	if($store_info['store_state'] == 0){
-        		$this->error('该店铺不存在或者已关闭', U('Index/index'));
+        		$this->error('该店铺不存在或者已关闭', U('Index/Index'));
         	}
             $store_info['store_slide'] = explode(',', $store_info['store_slide']);
             $store_info['store_slide_url'] = explode(',', $store_info['store_slide_url']);
@@ -48,7 +48,7 @@ class StoreController extends Controller
             $this->assign('store', $store_info);
             $this->assign('action',ACTION_NAME);
         } else {
-            $this->error('该店铺不存在或者已关闭', U('Index/index'));
+            $this->error('该店铺不存在或者已关闭', U('Index/Index'));
         }
     }
 

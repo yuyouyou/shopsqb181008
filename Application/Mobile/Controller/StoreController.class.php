@@ -23,19 +23,19 @@ class StoreController extends Controller {
 	public function _initialize() {
 		$store_id = I('store_id');
 		if(empty($store_id)){
-			$this->error('参数错误,店铺系列号不能为空',U('Index/index'));
+			$this->error('参数错误,店铺系列号不能为空',U('Index/Index'));
 		}
 		$store = M('store')->where(array('store_id'=>$store_id))->find();
 		if($store){
 			if($store['store_state'] == 0){
-				$this->error('该店铺不存在或者已关闭', U('Index/index'));
+				$this->error('该店铺不存在或者已关闭', U('Index/Index'));
 			}
 			$store['mb_slide'] = explode(',', $store['mb_slide']);
 			$store['mb_slide_url'] = explode(',', $store['mb_slide_url']);
 			$this->store = $store;
 			$this->assign('store',$store);
 		}else{
-			$this->error('该店铺不存在或者已关闭',U('Index/index'));
+			$this->error('该店铺不存在或者已关闭',U('Index/Index'));
 		}
 		if (session('?user')) {
 			$user = session('user');
